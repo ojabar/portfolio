@@ -7,10 +7,11 @@
 <script lang="ts" setup>
 </script>
 
-<style lang="postcss">
+<style lang="scss">
 $red: red;
 .hello {
   color: $red;
+  font-family: $font-primary
 }
 
 .dark-mode {

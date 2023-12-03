@@ -1,6 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "@/assets/scss/_font.scss" as *;',
+        },
+      },
+    },
+  },
+  css: ['~/assets/scss/global.scss'],
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", "@nuxtjs/i18n"],
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
@@ -20,7 +31,7 @@ export default defineNuxtConfig({
   },
   i18n: {
     vueI18n: "./i18n/i18n.config.ts",
-    locales: ["en", "fr"], 
+    locales: ["en", "fr"],
     defaultLocale: "en",
   },
 });
