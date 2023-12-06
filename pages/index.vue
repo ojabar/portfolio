@@ -1,22 +1,20 @@
 <template>
-  <div class="hello">
-    <p>{{ $t("welcome") }}</p>
-  </div>
+  <Container :size="'sm'">
+    <div class="grid grid-cols-1 gap-y-16">
+      <div class="mt-40">
+        <Information />
+      </div>
+      <div>
+        <TimeLine />
+      </div>
+    </div>
+  </Container>
 </template>
 
 <script lang="ts" setup>
+import Container from "@/components/common/Container.vue";
+import TimeLine from "@/components/blocks/TimeLine.vue";
+import Information from "@/components/blocks/Information.vue";
 </script>
 
-<style lang="scss">
-$red: red;
-.hello {
-  color: $red;
-  font-family: $font-primary
-}
-
-.dark-mode {
-  .hello {
-    @apply text-green-500;
-  }
-}
-</style>
+<style lang="scss"></style>

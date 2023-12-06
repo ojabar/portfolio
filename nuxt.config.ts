@@ -6,13 +6,19 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "@/assets/scss/_font.scss" as *;',
+          additionalData:
+            '@use "@/assets/scss/_font.scss" as *; @use "@/assets/scss/_colors.scss" as *;',
         },
       },
     },
   },
-  css: ['~/assets/scss/global.scss'],
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", "@nuxtjs/i18n"],
+  css: ["~/assets/scss/global.scss"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/color-mode",
+    "@nuxtjs/i18n",
+    "nuxt-icon",
+  ],
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
     exposeConfig: true,

@@ -1,0 +1,17 @@
+:root {
+  --color-primary: #2c3333;
+  --color-white-text: #f5f2e7;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-dark: #0d0d0d;
+  --color-tdark: rgba(13, 13, 13, 0.74);
+  --color-blue2: #2666cf;
+}
+
+$color-primary: var(--color-primary);
+$color-white-text: var(--color-white-text);
+$color-white: var(--color-white);
+$color-black: var(--color-black);
+$color-dark: var(--color-dark);
+$color-tdark: var(--color-tdark);
+$color-blue2: var(--color-blue2);
