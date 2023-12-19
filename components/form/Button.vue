@@ -23,12 +23,21 @@ const { submit } = defineProps({
 
 <style lang="scss">
 .button {
-  @apply bg-primary py-3 px-5 rounded-[10px]
+  @apply bg-primary text-white-text py-3 px-5 rounded-[10px]
   flex items-center
-  font-primary text-lg;
+  font-primary text-base;
 
+  @screen smMax {
+    @apply py-2 px-4
+    rounded-[6px]
+    text-sm;
+  }
   .iconbox {
     @apply inline-flex justify-center items-center w-6 h-6;
+
+    @screen smMax {
+      @apply w-4 h-4;
+    }
     &--after {
       @apply mr-2;
     }

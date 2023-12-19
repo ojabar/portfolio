@@ -24,9 +24,18 @@ const { tag } = defineProps({
       @apply relative z-10;
     }
     & > i {
-      @apply absolute bottom-1 left-0 w-full h-1 bg-blue2;
+      @apply absolute bottom-[0.1em] left-0 w-full h-1 bg-blue2;
 
       transform: matrix(1, 0, -1, 1, 0, 0);
+    }
+  }
+}
+.light-mode {
+  .title-underline {
+    & > span {
+      & > i {
+        @apply bg-yellow2;
+      }
     }
   }
 }
