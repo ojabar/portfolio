@@ -3,15 +3,30 @@
   --color-white-text: #f5f2e7;
   --color-white: #ffffff;
   --color-black: #000000;
+  --color-black2: #161616;
   --color-dark: #0d0d0d;
   --color-tdark: rgba(13, 13, 13, 0.74);
+  --color-tlight: rgba(204, 204, 204, 0.7);
   --color-blue2: #2666cf;
+  --color-yellow2: #fff9e3;
+
+  // ----------------
+
+  --progress-bg: #5f5f5f;
+  --progress-bg-percent: #161616;
 }
 
 $color-primary: var(--color-primary);
 $color-white-text: var(--color-white-text);
 $color-white: var(--color-white);
 $color-black: var(--color-black);
+$color-black2: var(--color-black2);
 $color-dark: var(--color-dark);
 $color-tdark: var(--color-tdark);
+$color-tlight: var(--color-tlight);
 $color-blue2: var(--color-blue2);
+$color-yellow2: var(--color-yellow2);
+// ----------------
+
+$progress-bg: var(--progress-bg);
+$progress-bg-percent: var(--progress-bg-percent);
