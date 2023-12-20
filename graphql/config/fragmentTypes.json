@@ -1,0 +1,39 @@
+{
+  "__schema": {
+    "types": [
+      {
+        "kind": "UNION",
+        "name": "MenuLinksDynamicZone",
+        "possibleTypes": [
+          {
+            "name": "ComponentCommonCta"
+          },
+          {
+            "name": "ComponentCommonCtaGroup"
+          }
+        ]
+      },
+      {
+        "kind": "UNION",
+        "name": "HomePageContentDynamicZone",
+        "possibleTypes": [
+          {
+            "name": "ComponentHomeSlider"
+          },
+          {
+            "name": "ComponentHomePosts"
+          },
+          {
+            "name": "ComponentHomeCategoryWithFilter"
+          },
+          {
+            "name": "ComponentHomePostsHorizontal"
+          },
+          {
+            "name": "ComponentCommonBannerWithImage"
+          }
+        ]
+      }
+    ]
+  }
+}
