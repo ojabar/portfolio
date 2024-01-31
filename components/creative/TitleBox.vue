@@ -1,16 +1,20 @@
 <template>
   <div class="titleBox">
     <span class="line line-left" :style="{ width: getSpacing() }"></span>
-    <h2 class="titleBox-title">{{ $t("My Timeline") }}</h2>
+    <h2 class="titleBox-title">{{ title }}</h2>
     <span class="line line-right"></span>
   </div>
 </template>
 
 <script setup lang="ts">
-const { spacing } = defineProps({
+const { spacing, title } = defineProps({
   spacing: {
     type: String,
     default: "0rem",
+  },
+  title: {
+    type: String,
+    default: "Empty",
   },
 });
 
@@ -37,7 +41,7 @@ const getSpacing = (): string => {
 
   @apply flex items-end gap-x-6 mb-[16rem];
   &-title {
-    @apply text-[10rem] leading-none mb-[-2.5rem];
+    @apply text-[8rem] leading-none mb-[-2.5rem];
   }
   .line {
     @apply h-[0.5625rem] bg-white;

@@ -3,6 +3,8 @@
     <CreativeProfile />
     <CreativeDescription class="mb-[18.75rem]" />
     <CreativeTimeLine />
+    <div class="mb-[-5.5rem]"></div>
+    <CreativeSkills />
   </div>
 </template>
 

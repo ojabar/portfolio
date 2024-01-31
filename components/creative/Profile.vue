@@ -18,9 +18,9 @@
 
   &-img {
     @apply absolute border-[2rem] border-black rounded-full;
-    height: calc(100vh - 18rem);
-    width: calc(100vh - 18rem);
-    top: calc(100vh - 42rem);
+    height: 38.9rem;
+    width: 38.9rem;
+    top: 15rem;
     left: 6rem;
     img {
       @apply h-full w-full;
@@ -28,12 +28,12 @@
   }
   &-title {
     @apply absolute;
-    top: calc(100vh - 50rem);
+    top: 6.4rem;
     left: 0;
   }
   &-dev {
     @apply absolute;
-    top: calc(100vh - 50rem);
+    top: 6.4rem;
     right: 0;
     transform: translateY(100%);
   }

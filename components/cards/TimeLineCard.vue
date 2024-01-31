@@ -51,6 +51,9 @@ const { title, date, left } = defineProps({
       height: calc(100% + 20px);
     }
   }
+  ul {
+    @apply list-disc;
+  }
   &-title {
     @apply text-lg mb-4;
 
@@ -77,6 +80,9 @@ const { title, date, left } = defineProps({
   }
   &--left {
     @apply text-right;
+    ul {
+      direction: rtl;
+    }
     @screen smMax {
       @apply text-left;
     }
