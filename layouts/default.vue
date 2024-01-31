@@ -1,6 +1,14 @@
 <template>
   <div class="main-bg"></div>
   <div class="topmenu">
+    <div class="topmenu-cv">
+      <ul class="flex">
+        <li>
+          <a href="/Jabar-Omar-cv.pdf" download>{{ $t("Resume.pdf") }}</a>
+        </li>
+        <li class="ml-7 mr-3"><span>|</span></li>
+      </ul>
+    </div>
     <div class="topmenu-lang">
       <ul>
         <li v-if="locale === 'fr'"><NuxtLink href="/">En</NuxtLink></li>
@@ -41,7 +49,7 @@ const { locale } = useI18n();
   @apply absolute top-5 right-5 z-50 duration-75 flex items-center gap-x-4;
 
   @screen smMax {
-    @apply top-1 right-3;
+    @apply top-4 right-3;
   }
 
   &-mode {
@@ -55,6 +63,17 @@ const { locale } = useI18n();
     @apply font-bold text-white opacity-50  duration-75;
     &:hover {
       @apply opacity-100;
+    }
+  }
+  &-cv {
+    a {
+      @apply font-bold text-white opacity-50  duration-75;
+      &:hover {
+        @apply opacity-100;
+      }
+    }
+    span {
+      @apply opacity-50;
     }
   }
 }
@@ -89,6 +108,12 @@ const { locale } = useI18n();
   .topmenu {
     &-lang {
       @apply text-black;
+    }
+    &-cv {
+      a,
+      span {
+        @apply text-black;
+      }
     }
   }
 }

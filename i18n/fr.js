@@ -13,6 +13,7 @@ const fr = {
   Educations: "Éducation",
   Experiences: "Expériences",
   Skills: "Compétences",
+  "Resume.pdf": "Résumé.pdf",
 };
 
 export default fr;

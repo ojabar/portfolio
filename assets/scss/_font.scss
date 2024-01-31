@@ -1,7 +1,12 @@
 :root {
   --font-primary: "Josefin Sans", sans-serif;
   --font-secondary: "Kodchasan", sans-serif;
+  --font-josefin-slab: "Josefin Slab", serif;
+  --font-literata: "Literata", serif;
 }
 
 $font-primary: var(--font-primary);
 $font-secondary: var(--font-secondary);
+
+$font-josefin-slab: var(--font-josefin-slab);
+$font-literata: var(--font-literata);
